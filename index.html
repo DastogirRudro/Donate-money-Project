@@ -11,21 +11,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <!-- <style>
+    <style>
         * {
             margin: 0;
             padding: 0;
         }
-    </style> -->
+    </style>
 
 </head>
 
 <body style="font-family: Lexend;">
-    <!-- <h1 class="text-xl font-bold">Important FAQ<i class="fa-regular fa-comment size-8 text-center text-3xl p-2 thin"></i></h1> -->
-    <main class="mb-8 border-b-2">
+    
+    <main class="mb-6 border-b-2 sticky top-0 bg-white">
         <header class="bg-[#F9F7F3] pt-8 pb-10 max-h-24 max-w-[1440px] flex m-auto items-center justify-around">
             <div class="first header">
-                <p id="blog" class="px-8 py-3 text-xl bg-[#B4F461] rounded-md font-semibold">Blog</p>
+                <p id="blog" class="px-8 py-3 cursor-pointer text-xl bg-[#B4F461] rounded-md font-semibold">Blog</p>
             </div>
             <div class="second-header sm:flex-row flex-col flex justify-center items-center">
                 <img src="./assets/logo.png" alt="">
@@ -36,16 +36,19 @@
                 <p class="ml-2 text-xl font-semibold"><span id="header-balance">5500</span>BDT</p>
             </div>
         </header>
-        <header class="text-center mt-32 mx-auto mb-8">
-            <button class="px-8 py-4 text-xl bg-[#B4F461] rounded-md font-semibold">Donation</button>
-            <button
+        <header class="text-center mt-14 mx-auto mb-4 bg-white">
+            <button id="donation" class="px-8 py-4 text-xl bg-[#B4F461] rounded-md font-bold">Donation</button>
+            <button id="history"
                 class="px-8 py-4 text-xl bg-[#d3caca4d] border-2 border-gray-400 ml-4 text-[#111111B3] font-bold rounded-md">History</button>
         </header>
     </main>
     <!-- header tag complete now and Write
     start here a new section which is section or main -->
-
-    <main class="bg-[#FFFFFF] max-w-[1140px] max-h-[1642px] gap-8 flex flex-col items-center mx-auto">
+    <div id="challange" class="hidden max-w-[992px] max-h-[722px] mx-auto mt-8 flex justify-between items-center flex-col">
+       
+    </div>
+    <!-- history part end -->
+    <main id="main" class="bg-[#FFFFFF] max-w-[1140px] max-h-[1642px] gap-8 flex flex-col items-center mx-auto">
         <div class="first-container border-2 border-gray-300 rounded-lg p-6 flex-col md:flex-row flex items-center gap-3 justify-center">
             <div class="first-image md:w-1/2">
                 <img src="./assets/noakhali.png" alt="">
@@ -58,13 +61,26 @@
                <p class="text-[#111111] text-xl my-2 font-semibold">Donate for Flood at Noakhali, Bangladesh</p>
                <p class="text-[#111111B3] text-base"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                <div class="my-2">
-                <input type="text" name="" id="donation" placeholder="Write Donation Amount" class="p-4 text-sm w-full border-2 bg-[#FFFFFF] rounded-lg  border-gray-300" >
+                <input type="text" name="" id="donation1" placeholder="Write Donation Amount" class="p-4 text-sm w-full border-2 bg-[#FFFFFF] rounded-lg  border-gray-300" >
                </div>
                <div class="">
-                <button class="bg-[#B4F461] rounded-md w-full text-center py-2 px-8 font-semibold">Donate Now</button>
+                <button id="donate-now1" class="bg-[#B4F461] rounded-md w-full text-center py-2 px-8 font-semibold">Donate Now</button>
                </div>
             </div>
         </div>
+
+    <!-- This is modal for challange -->
+
+        <div id="modal" class="hidden opacity-95 transition-opacity top-36 z-50 fixed max-w-[412px] max-h-[372px] border-2 rounded-lg bg-white drop-shadow-2xl">
+          <div class="flex items-center gap-4 flex-col justify-center py-4 px-12">
+            <h1 class="font-bold text-xl">Congrates</h1>
+            <img src="./assets/coin.png" alt="">
+            <p class="text-gray-600">You have donate for Humankind</p>
+            <h1 class="font-bold">Successfully</h1>
+            <button id="modal-button" class="bg-slate-200 px-2 py-1 rounded-md">Close confirmation</button>
+          </div>
+        </div>
+
         <!-- Here first container is completed now
         We start here second container let's see what happen -->
         <div class="first-container border-2 border-gray-300 rounded-lg p-6 flex-col md:flex-row flex items-center gap-3 justify-center">
@@ -82,7 +98,7 @@
                 <input type="text" name="" id="donation" placeholder="Write Donation Amount" class="p-4 text-sm w-full border-2 bg-[#FFFFFF] rounded-lg  border-gray-300" >
                </div>
                <div class="">
-                <button class="bg-[#B4F461] rounded-md w-full text-center py-2 px-8 font-semibold">Donate Now</button>
+                <button id="donate-now" class="bg-[#B4F461] rounded-md w-full text-center py-2 px-8 font-semibold">Donate Now</button>
                </div>
             </div>
         </div>

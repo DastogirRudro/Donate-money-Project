@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>donate-bangladesh.netlify.app</title>
+    <script src="https://kit.fontawesome.com/fa7a5cd4a5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-[#f7f4f0] pt-8 pb-10 max-h-24 max-w-[1440px] flex m-auto items-center justify-around mb-12">
+        <div class="first header">
+            <p id="home" class="px-8 py-3 text-xl bg-[#B4F461] rounded-md cursor-pointer font-semibold">Home</p>
+        </div>
+        <div class="second-header sm:flex-row flex-col flex justify-center items-center">
+            <img src="./assets/logo.png" alt="">
+            <p class="ml-3 font-semibold text-xl">Donate Bangladesh</p>
+        </div>
+        <div class="flex justify-center sm:flex-row flex-col items-center">
+            <img src="./assets/coin.png" alt="">
+            <p class="ml-2 text-xl font-semibold"><span id="header-balance">5500</span>BDT</p>
+        </div>
+    </header>
+    <!-- This is important FAQ -->
+
+    <main class=" max-w-[1140px] max-h-[740px] mx-auto mb-14">
+        <h1 class="text-xl font-bold mx-1">Important FAQ<i
+        class="fa-regular fa-comment size-8 text-center text-3xl p-2 thin ml-1"></i></h1>
+        <!-- THis is new bottom section -->
+        
+        <div class="border-2 border-gray-300 mt-4 mx-1 rounded-md flex items-center justify-between">
+            <div>
+                <h1 class="font-extrabold text-lg mt-3 mx-2 my-3">What is the Document Object Model(DOM)?</h1>
+                <p id="question" class="hidden font-semibold mx-3 mb-2"> It is a programming interface for web documents which represents the structure of a webpage</p>
+            </div>
+            <div>
+                <i id="icon" class="fa-solid fa-angle-down mx-4 mb-4 cursor-pointer"></i>
+            </div>
+        </div>
+        <!-- one question finished -->
+        <div class="border-2 border-gray-300 mx-1 rounded-md flex items-center justify-between">
+            <div>
+                <h1 class="font-extrabold text-lg mt-3 mx-2 my-3">How do you select an element from The DOM?</h1>
+                <p id="questionn" class="hidden font-semibold mx-3 mb-2"> To select an element from the DOM (Document Object Model),we can use various JavaScript methods depending on how you want to select the element. </p>
+            </div>
+            <div>
+                <i id="iconn" class="fa-solid fa-angle-down mx-4 mb-4 cursor-pointer"></i>
+            </div>
+        </div>
+        <!-- Two Question finished -->
+        <div class="border-2 border-gray-300 mx-1 rounded-md flex items-center justify-between">
+            <div>
+                <h1 class="font-extrabold text-lg mt-3 mx-2 my-3">What is event delegation in the context of the DOM,and why is it useful?</h1>
+                <p id="questionnn" class="hidden font-semibold mx-3 mb-2">It is a technique in the DOM where a single event listener is attached to a parent element to manage events triggered by its child elements.It is very useful for various reason </p>
+            </div>
+            <div>
+                <i id="iconnn" class="fa-solid fa-angle-down mx-4 mb-4 cursor-pointer"></i>
+            </div>
+        </div>
+        <!-- Here three question is completed  -->
+        <div class="border-2 border-gray-300 mx-1 rounded-md flex items-center justify-between">
+            <div>
+                <h1 class="font-extrabold text-lg mt-3 mx-2 my-3">How do you manipulate an element's attributes and styles using the DOM?</h1>
+                <p id="questionnnn" class="hidden font-semibold mx-3 mb-2">You can manipulate an element's in the DOM using JavaScript in a few simple ways using getAttribute(attributeName) setAttribute(attributeName, value) removeAttribute(attributeName): </p>
+            </div>
+            <div>
+                <i id="iconnnn" class="fa-solid fa-angle-down mx-4 mb-4 cursor-pointer"></i>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.getElementById('home').addEventListener('click',function(){
+            window.location.href='/index.html'
+        })
+
+
+        document.getElementById('icon').addEventListener('click', function(event){
+            const icon =document.getElementById('icon')
+            const question= document.getElementById('question')
+            question.classList.toggle('hidden')
+
+
+            event.target.classList.toggle('fa-angle-down');
+            event.target.classList.toggle('fa-angle-up');
+        })
+
+        document.getElementById('iconn').addEventListener('click', function(event){
+            const icon =document.getElementById('iconn')
+            const question= document.getElementById('questionn')
+            question.classList.toggle('hidden')
+
+
+            event.target.classList.toggle('fa-angle-down');
+            event.target.classList.toggle('fa-angle-up');
+        })
+
+        document.getElementById('iconnn').addEventListener('click', function(event){
+            const icon =document.getElementById('iconnn')
+            const question= document.getElementById('questionnn')
+            question.classList.toggle('hidden')
+
+
+            event.target.classList.toggle('fa-angle-down');
+            event.target.classList.toggle('fa-angle-up');
+        })
+
+        document.getElementById('iconnnn').addEventListener('click', function(event){
+            const icon =document.getElementById('iconnnn')
+            const question= document.getElementById('questionnnn')
+            question.classList.toggle('hidden')
+
+
+            event.target.classList.toggle('fa-angle-down');
+            event.target.classList.toggle('fa-angle-up');
+        })
+    </script>
+    <script src="./home.js"></script>
+</body>
+
+</html>
