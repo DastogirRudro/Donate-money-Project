@@ -1,5 +1,5 @@
 document.getElementById('blog').addEventListener('click',function(){
-    window.location.href='/blog.html'
+    window.location.href="blog.html"
 })
 
 // This is challange part for using common function
